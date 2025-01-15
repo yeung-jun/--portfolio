@@ -1,0 +1,43 @@
+@charset "utf-8";
+.menuScreen {
+    position: fixed;
+    width: 80%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    background: var(--web-white-color);
+    z-index: 2;
+    transition: 0.4s ease-in-out;
+}
+.menuScreen ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+}
+.menuScreen ul li {
+    width: 100%;
+    height: 10vh;
+    line-height: 60px;
+}
+.menuScreen ul li a {
+    display: block;
+    text-align: center;
+    font-size: 4vh;
+}
+.menuBg {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+/* view */
+.view .menuScreen {
+    right: 0;
+}
+.view .menuBg {
+    display: block;
+}

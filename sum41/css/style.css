@@ -1,0 +1,619 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'SCDream-Light';
+    src: url(../font/SCDream3.woff);
+}
+@font-face {
+    font-family: 'SCDream-Regular';
+    src: url(../font/SCDream4.woff);
+}
+@font-face {
+    font-family: 'SCDream-Medium';
+    src: url(../font/SCDream5.woff);
+}
+@font-face {
+    font-family: 'BASKVILL';
+    src: url(../font/BASKVILL.woff);
+}
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url(../font/Pretendard-Light.woff);
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url(../font/Pretendard-Medium.woff);
+}
+:root {
+    --main-black-color: #343131;
+    --main-white-color: #FAF7F0;
+    scroll-behavior: smooth;
+}
+* {
+    cursor: url(../img/cursor-default.cur), default;
+}
+a {
+    cursor: url(../img/cursor-pointer.cur), pointer;
+}
+.wrap {
+    overflow: hidden;
+}
+.small {
+    display: none;
+}
+.container {
+    width: 96%;
+    margin: 0 auto;
+}
+.tablet {
+    display: none;
+}
+.btn_hover:hover {
+    background: var(--main-black-color);
+    color: var(--main-white-color);
+}
+body {
+    background: var(--main-white-color);
+}
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid var(--main-black-color);
+    display: flex;
+    align-items: center;
+}
+header>.container>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "SCDream-Regular";
+    font-size: 24px;
+    align-items: center;
+    gap: 20px;
+}
+header ul.header_left {
+    flex: 1;
+}
+header ul.header_center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+header ul.header_center li {
+    flex: 1;
+    text-align: center;
+}
+header ul.header_right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+header ul.header_right li.login {
+    padding: 15px 30px;
+    border: 2px solid var(--main-black-color);
+    border-radius: 50px;
+    cursor: url(../img/cursor-pointer.cur), pointer;
+}
+header ul.header_right li.join {
+    padding: 15px 30px;
+    background: var(--main-black-color);
+    border-radius: 50px;
+    color: var(--main-white-color);
+    cursor: url(../img/cursor-pointer.cur), pointer;
+}
+.main_visual {
+    width: 100%;
+    height: 980px;
+    background-image: url(../img/main_visual.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    font-family: 'SCDream-Medium';
+    font-size: 20px;
+}
+.main_visual h2 {
+    font-family: 'BASKVILL';
+    font-size: 128px;
+    text-align: center;
+    color: var(--main-white-color);
+    letter-spacing: 6.4px;
+    position: relative;
+    z-index: 0;
+    line-height: 1.5em;
+}
+.main_visual h2::before {
+    z-index: -1;
+    content: 'What We’re All About ?';
+    position: absolute;
+    -webkit-text-stroke: 6px var(--main-black-color);
+}
+.main_visual a.spotify_btn {
+    padding: 15px 30px;
+    background: #1ed860;
+    border-radius: 50px;
+    border: 2px solid var(--main-black-color);
+}
+.main_visual a.apple_music_btn {
+    padding: 15px 30px;
+    background: #FC243D;
+    border-radius: 50px;
+    border: 2px solid var(--main-black-color);
+}
+.main_visual .container {
+    position: relative;
+    height: 100%;
+}
+.music_btn {
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    color: var(--main-white-color);
+}
+.members {
+    width: 100%;
+    margin: 200px 0;
+}
+.members h2 {
+    font-size: 128px;
+    font-family: 'BASKVILL';
+    letter-spacing: 6.4px;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    color: var(--main-white-color);
+}
+.members h2::before {
+    z-index: -1;
+    content: 'Who Are We?';
+    position: absolute;
+    -webkit-text-stroke: 6px var(--main-black-color);
+}
+.members .band {
+    margin-top: 40px;
+    width: 100%;
+    height: 711px;
+    display: flex;
+    gap: 3%;
+}
+.members .band .band_box {
+    flex: 1;
+}
+.members .band .band_box .img_box {
+    width: 100%;
+    height: 80%;
+    text-indent: -9999px;
+}
+.members .band .band_box .box1 {
+    background: url(../img/deryck_nukki.png) center center/cover;
+    position: relative;
+    overflow: hidden;
+    cursor: url(../img/cursor-pointer.cur), pointer;
+}
+.members .band .band_box .box1::after {
+    content: '1980년 3월 21일 \a 예명: Dizzy D, Dr.Jack \a \a관련활동 \a 에이브릴 라빈, The Operation M.D.';
+    white-space: pre;
+    font-family: 'SCDream-Medium';
+    font-size: 20px;
+    line-height: 1.2em;
+    text-align: center;
+    color: var(--main-white-color);
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    background: var(--main-white-color);
+    color: var(--main-black-color);
+    border: 2px solid var(--main-black-color);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+    padding: 10px;
+}
+.members .band .band_box .box1:hover::after {
+    top: 60%;
+}
+.members .band .band_box .box1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 74%;
+    background: #cb6040;
+    bottom: 0;
+    transition: 0.8s;
+}
+.members .band .band_box .box1:hover::before {
+    height: 100%;
+}
+.members .band .band_box .box2 {
+    background: url(../img/jocz_nikki.png) center center/cover;
+    position: relative;
+    overflow: hidden;
+    cursor: url(../img/cursor-pointer.cur), pointer;
+}
+.members .band .band_box .box2::after {
+    content: '1981년 7월 23일 \a 예명: Stevo 32, Pain \a \a관련활동 \a The Operation M.D.';
+    white-space: pre;
+    font-family: 'SCDream-Medium';
+    font-size: 20px;
+    line-height: 1.2em;
+    text-align: center;
+    color: var(--main-white-color);
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    background: var(--main-white-color);
+    color: var(--main-black-color);
+    border: 2px solid var(--main-black-color);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+    padding-top: 20px;
+}
+.members .band .band_box .box2:hover::after {
+    top: 60%;
+}
+.members .band .band_box .box2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 74%;
+    background: #ffbf61;
+    bottom: 0;
+    transition: 0.8s;
+}
+.members .band .band_box .box2:hover::before {
+    height: 100%;
+}
+.members .band .band_box .box3 {
+    background: url(../img/deve_nikki.png) center center/cover;
+    position: relative;
+    overflow: hidden;
+    cursor: url(../img/cursor-pointer.cur), pointer;
+}
+.members .band .band_box .box3::after {
+    content: '1980년 7월 26일 \a 예명: Dave Brownsound, Pleasure \a \a관련활동 \a Orange Thieves, Brown Brigade \a Black Cat Attack';
+    white-space: pre;
+    font-family: 'SCDream-Medium';
+    font-size: 20px;
+    line-height: 1.6em;
+    text-align: center;
+    color: var(--main-white-color);
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    background: var(--main-white-color);
+    color: var(--main-black-color);
+    border: 2px solid var(--main-black-color);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+    padding-top: 20px;
+}
+.members .band .band_box .box3:hover::after {
+    top: 50%;
+}
+.members .band .band_box .box3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 74%;
+    background: #257180;
+    bottom: 0;
+    transition: 0.8s;
+}
+.members .band .band_box .box3:hover::before {
+    height: 100%;
+}
+.members .band .band_box .box4 {
+    background: url(../img/cone_nukki.png) center center/cover;
+    position: relative;
+    overflow: hidden;
+    cursor: url(../img/cursor-pointer.cur), pointer;
+}
+.members .band .band_box .box4::after {
+    content: '1980년 9월 3일 \a 예명: Cone, Sniper, Dr. Dynamite \a \a관련활동\a The Operation M.D.\a';
+    white-space: pre;
+    font-family: 'SCDream-Medium';
+    font-size: 20px;
+    line-height: 1.2em;
+    text-align: center;
+    color: var(--main-white-color);
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    background: var(--main-white-color);
+    color: var(--main-black-color);
+    border: 2px solid var(--main-black-color);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s;
+    padding-top: 20px;
+}
+.members .band .band_box .box4:hover::after {
+    top: 60%;
+}
+.members .band .band_box .box4::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 74%;
+    background: #798645;
+    bottom: 0;
+    transition: 0.8s;
+}
+.members .band .band_box .box4:hover::before {
+    height: 100%;
+}
+.members .band div h3 {
+    margin-top: 50px;
+    font-family: 'SCDream-Medium';
+    font-size: 24px;
+}
+.members .band div p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Pretendard-Light';
+}
+.about {
+    width: 100%;
+    padding: 200px 0;
+    background: #C7253E;
+}
+.about h2 {
+    text-indent: -9999px;
+}
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border: 2px solid var(--main-black-color);
+    box-shadow: 6px 6px 0px 0px var(--main-black-color);
+}
+.about .container>img {
+    width: 50%;
+}
+.about .about_txt {
+    width: 45%;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about .about_txt h3 {
+    font-size: 128px;
+    font-family: 'BASKVILL';
+    text-align: center;
+    z-index: 0;
+    position: relative;
+    color: var(--main-white-color);
+    border-bottom: 2px solid var(--main-black-color);
+}
+.about .about_txt h3::before {
+    z-index: -1;
+    content: 'Sum41';
+    position: absolute;
+    -webkit-text-stroke: 6px var(--main-black-color);
+}
+.about .about_txt p {
+    font-family: 'Pretendard-Medium';
+    font-size: 24px;
+    line-height: 1.6em;
+}
+.album {
+    padding: 200px 0;
+    background: url(../img/album_bg.png) center center/cover no-repeat;
+}
+.album .container {
+    width: 90%;
+}
+.album h2 {
+    font-family: 'BASKVILL';
+    font-size: 128px;
+    z-index: 0;
+    position: relative;
+    letter-spacing: 6.4px;
+    text-align: center;
+    color: var(--main-white-color);
+}
+.album h2::before {
+    z-index: -1;
+    content: 'Album';
+    position: absolute;
+    -webkit-text-stroke: 4px var(--main-black-color);
+}
+.album .album_imgs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.album .album_imgs h2 {
+    text-indent: -9999px;
+    position: absolute;
+}
+.album .album_imgs>img {
+    width: 40%;
+    height: 40%;
+}
+.album .album_imgs .album_cover {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.album .album_imgs .album_cover div {
+    width: 50%;
+    position: relative;
+    z-index: 0;
+}
+.album .album_imgs .album_cover .cover {
+    width: 50%;
+}
+.album .album_imgs .album_cover .lp {
+    position: absolute;
+    width: 25%;
+    left: 0%;
+    z-index: -1;
+    transition: .6s;
+}
+.album .album_imgs .album_cover div:hover .lp {
+    left: 50%;
+}
+.album a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 30px 15px 35px;
+    background: var(--main-white-color);
+    border-radius: 50px;
+    border: 2px solid var(--main-black-color);
+    font-size: 20px;
+    font-family: 'SCDream-Medium';
+    margin-top: 90px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.youtube {
+    padding: 200px 0;
+    background: var(--main-white-color);
+}
+.youtube ul {
+    width: 100%;
+    display: flex;
+    color: var(--main-black-color);
+    gap: 20px;
+}
+.youtube ul li {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    flex: 1;
+    background: var(--main-black-color);
+    color: var(--main-white-color);
+    font-size: 24px;
+    font-family: 'SCDream-Medium';
+    cursor: url(../img/cursor-pointer.cur), pointer;
+}
+.youtube ul li.on {
+    background: var(--main-white-color);
+    border-top: 2px solid var(--main-black-color);
+    border-right: 2px solid var(--main-black-color);
+    border-left: 2px solid var(--main-black-color);
+    color: var(--main-black-color);
+}
+.youtube .youtube_tit {
+    width: 100%;
+    border: 2px solid var(--main-black-color);
+    color: var(--main-black-color);
+    letter-spacing: 3.6px;
+    padding: 30px 40px;
+}
+.youtube .youtube_tit h2 {
+    font-size: 96px;
+    font-family: 'SCDream-Medium';
+    display: none;
+}
+.youtube .youtube_tit h2.on {
+    display: block;
+}
+.youtube .youtube_tit h2 span {
+    font-size: 72px;
+    font-family: 'SCDream-Medium';
+}
+.youtube .container figure {
+    width: 100%;
+    position: relative;
+}
+.youtube .container figure div {
+    display: none;
+}
+.youtube .container figure div.on {
+    display: block;
+    position: relative;
+}
+.youtube .container figure div video {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    height: 170px;
+    background: var(--main-black-color);
+    text-align: center;
+}
+footer .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer a {
+    flex: 1;
+}
+footer p {
+    flex: 1;
+    font-family: 'Pretendard-Medium';
+    font-size: 18px;
+    color: var(--main-white-color);
+}
+footer ul.sns {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    font-size: 36px;
+    color: var(--main-white-color);
+}
+.hambuger_menu {
+    width: 70%;
+    height: 100vh;
+    background: var(--main-white-color);
+    position: absolute;
+    position: fixed;
+    top: 0;
+    border-right: 2px solid var(--main-black-color);
+    padding: 5%;
+    left: -70%;
+}
+.hambuger_menu .menu_top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hambuger_menu .menu_top .close {
+    width: 35px;
+    height: 35px;
+    background: url(../img/close_btn.png) center center/cover;
+    cursor: url(../img/cursor-pointer.cur), pointer;
+}
+.hambuger_menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.hambuger_menu h2 {
+    font-family: 'BASKVILL';
+    color: var(--main-black-color);
+    font-size: 35px;
+    line-height: 2em;
+    border-bottom: 2px solid var(--main-black-color);
+}
+.hambuger_menu ul li {
+    font-family: 'SCDream-Regular';
+    font-size: 20px;
+}
+button {
+    border: 0;
+}

@@ -1,0 +1,39 @@
+@charset "utf-8";
+.loading_bg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    position: fixed;
+    background: url(../img/loading_bg.png) no-repeat center center/cover;
+}
+.loading_bg::after {
+    content: 'LOADING';
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    font-size: 256px;
+    font-family: 'Road_Rage';
+    background: linear-gradient(0deg, #D8CBEC 0%, #645085 51%, #9585B1 55%, #BFB1D6 60%, #DDD5E9 70%, #F5F3F9 80%, #FFF 86%, #FBF8FF 87%, #EDE2FF 93%, #E9DBFF 96%);
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: loading_tit_slide 1.5s linear infinite;
+}
+@keyframes loading_tit_slide {
+    from {
+        content: 'LOADING';
+    }
+    25% {
+        content: 'LOADING.';
+    }
+    50% {
+        content: 'LOADING..';
+    }
+    75% {
+        content: 'LOADING...';
+    }
+    to {
+        content: 'LOADING...';
+    }
+}

@@ -1,0 +1,30 @@
+$(function(){
+    $('.city_purple').click(function(){
+        $(this).fadeOut();
+        $('.city_mint').fadeIn();
+        $('.aurora_purple').fadeOut();
+        $('.aurora_mint').fadeIn();
+        $('.purple_moutian').fadeOut();
+        $('.mint_moutian').fadeIn();
+    });
+    $('.city_mint').click(function(){
+        $(this).fadeOut();
+        $('.city_purple').fadeIn();
+        $('.aurora_purple').fadeIn();
+        $('.aurora_mint').fadeOut();
+        $('.purple_moutian').fadeIn();
+        $('.mint_moutian').fadeOut();
+    });
+    $('.symbol1').click(function(){
+        $('.modal').fadeIn();
+    });
+    $('.modal').click(function(){
+        $('.modal').fadeOut();
+    });
+    $('.car').click(function(){
+        $('.modal2').fadeIn();
+    });
+    $('.modal2').click(function(){
+        $(this).fadeOut();
+    });
+});

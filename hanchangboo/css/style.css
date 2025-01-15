@@ -1,0 +1,617 @@
+@charset "utf-8";
+/* 헤더 */
+header {
+    width: 100%;
+    height: 155px;
+    background: var(--main-white-color);
+    border-bottom: 2px solid #888;
+}
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+.header_top {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_top h2 {
+    position: absolute;
+    text-indent: -9999px;
+}
+.search_box {
+    width: 500px;
+    height: 48px;
+    border-radius: 20px;
+    border: 2px solid var(--main-black-color);
+    display: flex;
+    align-items: center;
+    padding: 0 36px;
+    gap: 30px;
+}
+.search_btn {
+    width: 36px;
+    height: 36px;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: #888;
+}
+.search_text {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.btn_ef {
+    text-align: center;
+    display: block;
+    background: var(--main-white-color);
+    border: 2px solid var(--main-black-color);
+    border-radius: 20px;
+}
+.login_btn {
+    width: 146px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+}
+nav {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+/* 메인 */
+.wrapper {
+    overflow: hidden;
+}
+.main_visual_wrapper {
+    height: calc(100vh - 155px);
+}
+.main_visual {
+    width: 100%;
+    height: calc(100vh - 255px);
+    background: #D2EBFF;
+    margin-top: 50px;
+    border-radius: 50px;
+    position: relative;
+}
+.main_visual > h2 {
+    position: absolute;
+    text-indent: -9999px;
+}
+.main_visual_txt {
+    width: 680px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 70px;
+    left: 20px;
+}
+.main_visual_txt h2 {
+    font-size: 48px;
+}
+.main_visual_txt p {
+    font-size: 18px;
+}
+.main_visual_txt span {
+    font-size: 20px;
+}
+.detail_btn {
+    position: absolute;
+    width: 146px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    right: 0;
+    bottom: 0;
+}
+.main_visual_adorn {
+    position: absolute;
+    width: 600px;
+    height: 530px;
+    bottom: 0;
+    right: 0;
+}
+.adorn_bg {
+    width: 530px;
+    height: 530px;
+    position: absolute;
+    background: #FFBF61;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 25px 0px 0px 0px #FD8B51, 28px 0px 0px 0px #1F1F1F;
+}
+.adorn_bg img {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+}
+.adorn_txt {
+    position: absolute;
+    width: 230px;
+    height: 130px;
+    background: #FFBF61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 20px;
+    border: 2px solid var(--main-black-color);
+    gap: 20px;
+    padding: 0 12px;
+}
+.adorn_txt p {
+    font-size: 16px;
+}
+.adorn_txt span {
+    font-size: 14px;
+}
+.adorn_txt1 {
+    left: -40px;
+    bottom: 66px;
+}
+.adorn_txt2 {
+    right: -55px;
+}
+/* 4way */
+.way_wrapper {
+    width: 100%;
+    padding: 100px 0;
+    background: #FFF4EA;
+}
+.way_container {
+    height: 60vh;
+}
+.way {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.way h2 {
+    text-align: center;
+    font-size: 36px;
+}
+.way_card {
+    width: 320px;
+    height: 440px;
+    background: var(--main-white-color);
+    border: 2px solid var(--main-black-color);
+    border-radius: 30px;
+    overflow: hidden;
+}
+.card_box {
+    width: 100%;
+    height: 220px;
+}
+.card_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.card_txt {
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+.card_txt h6 {
+    font-size: 24px;
+}
+.card_txt p {
+    font-size: 18px;
+}
+/* 가이드 */
+.guide_wrapper {
+    height: 50vh;
+    margin-top: 100px;
+}
+.guide {
+    width: 100%;
+    height: 250px;
+    border: 2px solid var(--main-black-color);
+    border-radius: 40px;
+    box-shadow: 4px 4px 0px 0px var(--main-black-color);
+    padding: 0px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.guide h6 {
+    font-size: 36px;
+}
+.guide_btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.guide_btn {
+    width: 400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid var(--main-black-color);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.guide_btn i {
+    font-size: 36px;
+}
+.guide_btn p {
+    font-size: 20px;
+}
+/* 공지사항 구인공고 */
+.notice_job_wrapper {
+    width: 100%;
+    height: 533px;
+}
+.notice_job_wrapper > h2 {
+    position: absolute;
+    text-indent: -9999px;
+}
+.notice_job {
+    position: relative;
+}
+.notice_job section {
+    float: left;
+    height: 533px;
+}
+.notice_job section h2 {
+    width: 680px;
+    text-align: center;
+    height: 53px;
+    border-bottom: 2px solid #ccc;
+    color: #ccc;
+    cursor: pointer;
+}
+.notice_job section.notice h2 {
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+.notice_job section.on h2 {
+    color: var(--main-black-color);
+    border-color: var(--main-black-color);
+}
+.notice_job section ul {
+    width: 1400px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+    left: 0;
+    top: 93px;
+}
+.notice_job section.on ul {
+    display: flex;
+}
+.notice_job section ul li {
+    width: 100%;
+    height: 80px;
+}
+.notice_job section ul li a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--main-white-color);
+    border: 2px solid var(--main-black-color);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    box-sizing: border-box;
+}
+.notice_job section ul li a em {
+    font-size: 18px;
+    color: #888;
+    font-style: normal;
+}
+.notice_job section ul li a p {
+    font-size: 24px;
+}
+.notice_job section ul li a i {
+    font-size: 20px;
+}
+/* 배너 */
+.mini_banner_wrapper {
+    width: 100%;
+    height: 270px;
+    background: url(../img/banner_bg.png);
+    margin-top: 200px;
+    position: relative;
+}
+.banner_txt {
+    width: 727px;
+    height: 160px;
+    position: absolute;
+    margin-left: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner_txt h4 {
+    font-size: 36px;
+}
+.banner_txt p {
+    font-size: 18px;
+}
+.banner_txt a {
+    display: block;
+    padding: 16px 40px;
+    background: var(--main-white-color);
+    border-radius: 10px;
+    border: 2px solid var(--main-black-color);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 18px;
+}
+/* 리뷰 */
+.review_wrapper {
+    background: #FFF4EA;
+    padding: 200px 0;
+}
+.review_wrapper > h2 {
+    position: absolute;
+    text-indent: -9999px;
+}
+.review_wrapper .container {
+    display: flex;
+    gap: 40px;
+}
+.review_wrapper .container section {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.review_tit {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.review_wrapper .container section ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background: var(--main-white-color);
+}
+.review_txt {
+    display: flex;
+    height: 240px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.review_txt_tit {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.review_txt em {
+    font-size: 18px;
+    font-style: normal;
+}
+.review_txt p {
+    font-size: 18px;
+}
+/* 판매 및 클래스 추천 */
+.sell_class_wrapper {
+    margin-top: 200px;
+}
+.sell_class_wrapper .container {
+    display: flex;
+    gap: 40px;
+}
+.sell_class {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    float: left;
+}
+.sell_class_tit {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.sell_class ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.sell_class  ul span {
+    font-size: 18px;
+    font-weight: bold;
+}
+.class_name em {
+    font-size: 16px;
+    font-style: normal;
+}
+.sell_class  ul a {
+    display: block;
+    padding: 12px 15px;
+    background: #254336;
+    color: var(--main-white-color);
+}
+.class_txt {
+    display: flex;
+    height: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.class_txt h6 {
+    font-size: 18px;
+}
+.class_txt p {
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+.sell_class_container > h2 {
+    position: absolute;
+    text-indent: -9999px;
+}
+/* 리뷰 */
+.gal {
+    margin-top: 100px;
+    padding: 100px 0;
+    background: #FFF4EA
+}
+.gal .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.gal_img_wrapper {
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gal_img_wrapper ul {
+    background: var(--main-white-color);
+    border: 2px solid var(--main-black-color);
+    border-radius: 40px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 24px;
+}
+.gal a {
+    display: block;
+    padding: 16px 32px;
+    border: 2px solid var(--main-black-color);
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    background: var(--main-white-color);
+}
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 330px;
+    box-sizing: border-box;
+    padding: 40px 0;
+    background: var(--main-black-color);
+    color: var(--main-white-color);
+}
+footer .container {
+    display: flex;
+    flex-direction: column;
+}
+.f_top {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.call_mail {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    font-size: 18px;
+}
+.sns {
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+}
+.info ul h4 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.bottom_nav {
+    flex: 2;
+}
+.bottom_nav ul {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.bottom_nav ul li {
+    flex: 1;
+    text-align: center;
+}
+.bottom_nav ul li p {
+    font-size: 18px;
+}
+.bot_nav {
+    position: absolute;
+    left: 0;
+    top: 56px;
+    width: 100%;
+    display: flex;
+}
+.bot_nav ul {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.bot_nav ul li a {
+    font-weight: lighter;
+}
+.mail {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.mail > p {
+    text-align: center;
+    font-size: 18px;
+}
+.email_box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.email_text {
+    padding: 16px 24px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+.email_btn {
+    padding: 16px 0;
+    background: #FFBF61;
+    border-radius: 30px;
+    font-size: 16px;
+}
+.copy {
+    text-align: center;
+}

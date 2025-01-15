@@ -1,0 +1,29 @@
+/* 전체 페이지의 기본 스타일 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    height: 700vh; /* 긴 페이지를 만들어 스크롤 테스트 */
+    background: linear-gradient(to bottom, #ffefba, #ffffff);
+  }
+  
+  /* sticky 박스 스타일 */
+  .sticky-box {
+    position: sticky;
+    top: 30%; /* 화면 상단에서 30% 지점에 sticky 적용 */
+    text-align: center;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out; /* 애니메이션 속도를 더 길게 설정 */
+  }
+  
+  /* 애니메이션 효과 */
+  .sticky-box.animate {
+    transform: translateY(15px); /* 더 많이 내려갔다가 */
+  }
+  

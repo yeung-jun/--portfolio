@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+    font-family: "pre_t" , Noto Sans KR;
+    src: url(../font/woff/Pretendard-Thin.woff);
+}
+.pre_t {
+    font-family: 'pre_t', Noto Sans KR;
+}
+@font-face {
+    font-family: "pre_l", Noto Sans KR;
+    src: url(../font/woff/Pretendard-Light.woff);
+}
+.pre_l {
+    font-family: 'pre_l', Noto Sans KR;
+}
+@font-face {
+    font-family: "pre_el", Noto Sans KR;
+    src: url(../font/woff/Pretendard-ExtraLight.woff);
+}
+.pre_el {
+    font-family: 'pre_el', Noto Sans KR;
+}
+@font-face {
+    font-family: "pre_r", Noto Sans KR;
+    src: url(../font/woff/Pretendard-Regular.woff);
+}
+.pre_r {
+    font-family: 'pre_r', Noto Sans KR;
+}
+@font-face {
+    font-family: "pre_m", Noto Sans KR;
+    src: url(../font/woff/Pretendard-Medium.woff);
+}
+.pre_m {
+    font-family: 'pre_m', Noto Sans KR;
+}
+@font-face {
+    font-family: "pre_sb", Noto Sans KR;
+    src: url(../font/woff/Pretendard-SemiBold.woff);
+}
+.pre_sb {
+    font-family: 'pre_sb', Noto Sans KR;
+}
+@font-face {
+    font-family: "pre_b";
+    src: url(../font/woff/Pretendard-Bold.woff);
+}
+.pre_b {
+    font-family: 'pre_b', Noto Sans KR;
+}
+@font-face {
+    font-family: "pre_eb", Noto Sans KR;
+    src: url(../font/woff/Pretendard-ExtraBold.woff);
+}
+.pre_eb {
+    font-family: 'pre_eb', Noto Sans KR;
+}
+@font-face {
+    font-family: "pre_black", Noto Sans KR;
+    src: url(../font/woff/Pretendard-Black.woff);
+}
+.pre_black {
+    font-family: 'pre_black', Noto Sans KR;
+}

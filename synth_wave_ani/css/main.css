@@ -1,0 +1,369 @@
+@charset "utf-8";
+.wrap {
+    transform: scale(4) translateX(-6%) translateY(37%);
+    animation: main_intro 1.5s 1s forwards;
+}
+@keyframes main_intro {
+    from {
+        transform: scale(4) translateX(-6%) translateY(37%);
+    }
+    to {
+        transform: scale(1) translateX(0) translateY(0);
+    }
+}
+.main_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(../img/main_bg.png) center center/cover;
+}
+.main_stars {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(../img/main_stars.png) center center/cover;
+    animation: stars 100s infinite linear;
+}
+@keyframes stars {
+    from {
+        transform: rotate(0deg) scale(1.7);
+    }
+    to {
+        transform: rotate(-360deg) scale(1.7);
+    }
+}
+.main_city {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: url(../img/main_city.png) center center/cover;
+}
+.turn_off {
+    width: 100%;
+    height: 364px;
+    position: absolute;
+    bottom: 0;
+    background: url(../img/turn_off.png) center bottom/cover;
+    cursor: pointer;
+    display: block;
+}
+.turn_on {
+    width: 100%;
+    height: 364px;
+    position: absolute;
+    bottom: 0;
+    background: url(../img/turn_on.png) center bottom/cover;
+    cursor: pointer;
+    display: none;
+}
+.radio_off {
+    width: 151px;
+    height: 107px;
+    position: absolute;
+    left: 13%;
+    bottom: 15%;
+    background: url(../img/radio_off.png);
+}
+.radio_on {
+    width: 159px;
+    height: 115px;
+    position: absolute;
+    left: 12.8%;
+    bottom: 14.3%;
+    background: url(../img/radio_on.png);
+    display: none;
+    cursor: pointer;
+}
+.phone_off {
+    width: 73px;
+    height: 61px;
+    background: url(../img/phone_off.png);
+    position: absolute;
+    bottom: 14%;
+    left: 38%;
+}
+.phone_on {
+    width: 81px;
+    height: 69px;
+    background: url(../img/phone_on.png);
+    position: absolute;
+    left: 37.8%;
+    bottom: 13.2%;
+    display: none;
+    cursor: pointer;
+}
+.poster1_off {
+    width: 100px;
+    height: 144px;
+    position: absolute;
+    right: 50%;
+    margin-right: -365px;
+    bottom: 6%;
+    background: url(../img/poster1_off.png);
+}
+.poster2_off {
+    width: 100px;
+    height: 144px;
+    position: absolute;
+    right: 50%;
+    margin-right: -515px;
+    bottom: 6%;
+    background: url(../img/poster2_off.png);
+}
+.poster1_on {
+    width: 100px;
+    height: 144px;
+    position: absolute;
+    right: 50%;
+    margin-right: -361px;
+    bottom: 6%;
+    background: url(../img/poster1_on.png);
+    display: none;
+    cursor: pointer;
+}
+.poster2_on {
+    width: 100px;
+    height: 144px;
+    position: absolute;
+    right: 50%;
+    margin-right: -511px;
+    bottom: 6%;
+    background: url(../img/poster2_on.png);
+    display: none;
+    cursor: pointer;
+}
+.modal_music {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+.modal_music ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.modal_music ul li {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.modal_music ul li p {
+    color: #f1f1f1;
+    font-family: 'commando';
+    font-size: 56px;
+    line-height: 62px;
+    text-align: center;
+    margin-top: 30px;
+}
+.modal_music ul li .album_img1 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/album_1.png);
+}
+.modal_music ul li .album_img2 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/album_2.png);
+}
+.modal_music ul li .album_img3 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/album_3.png);
+}
+.modal_movie {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    display: none;
+    cursor: pointer;
+}
+.modal_movie ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.modal_movie ul li {
+    flex: 1;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.modal_movie ul li:last-child {
+    align-items: center;
+    justify-content: center;
+}
+.modal_movie ul li p {
+    color: #f1f1f1;
+    font-family: 'commando';
+    font-size: 72px;
+    text-align: center;
+    line-height: 2em;
+}
+.modal_movie .movie_img1 {
+    width: 300px;
+    height: 425px;
+    background: url(../img/movie_img1.png);
+    margin: 0 auto;
+}
+.modal_movie .movie_img2 {
+    width: 300px;
+    height: 425px;
+    background: url(../img/movie_img2.png);
+    margin: 0 auto;
+}
+.modal_movie .movie_img3 {
+    width: 300px;
+    height: 425px;
+    background: url(../img/movie_img3.png);
+    margin: 0 auto;
+}
+.arrow {
+    width: 144px;
+    height: 100px;
+    background: url(../img/orange_arrow2.png);
+}
+.modal_work {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+.modal_work ul {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.modal_work p {
+    color: #f1f1f1;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Paperlogy-3';
+    line-height: 1.6em;
+}
+.modal_work a {
+    text-decoration: underline;
+}
+.modal_work .work_img1 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/work_1.png);
+}
+.modal_work .work_img2 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/work_2.png);
+}
+.modal_work .work_img3 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/work_3.png);
+}
+.work_detail3 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+.work_detail_inner {
+    width: 1680px;
+    height: 836px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work_detail_img3 {
+    width: 836px;
+    height: 836px;
+    background: url(../img/work_detail3.png);
+}
+.work_detail_inner p {
+    color: #f1f1f1;
+    font-family: 'Paperlogy-3';
+    font-size: 34px;
+    line-height: 1.6;
+}
+.work_detail_inner a {
+    text-decoration: underline;
+}
+.modal_metarial {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.modal_metarial ul {
+    width: 1794px;
+    height: 422px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.modal_metarial ul li {
+    color: #f1f1f1;
+    font-family: 'commando';
+    font-size: 58px;
+    text-align: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.modal_metarial ul li:last-child {
+    justify-content: center;
+}
+.modal_metarial ul li .metarial_img1 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/metarial_1.png);
+}
+.modal_metarial ul li .metarial_img2 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/metarial_2.png);
+}
+.modal_metarial ul li .metarial_img3 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/metarial_3.png);
+}
+.modal_metarial ul li .metarial_img4 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/metarial_4.png);
+}
+.modal_metarial ul li .metarial_img5 {
+    width: 300px;
+    height: 300px;
+    background: url(../img/metarial_5.png);
+}

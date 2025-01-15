@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Layout</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header class="sidebar">
+      <h1>DECODE LAB</h1>
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        <li><a href="#"><i class="fa-solid fa-envelope"></i> Email</a></li>
+      </ul>
+    </header>
+    <main class="content">
+      <section class="card-grid">
+        <article class="card">
+          <img src="img/p1.jpg" alt="OMG" class="gallery-img">
+          <h2>OMG</h2>
+          <p>Here comes content description in detail.</p>
+        </article>
+        <article class="card">
+          <img src="img/p2.jpg" alt="Minji" class="gallery-img">
+          <h2>Minji</h2>
+          <p>Here comes content description in detail.</p>
+        </article>
+        <!-- 추가 카드 -->
+      </section>
+    </main>
+  </div>
+
+  <!-- 모달 -->
+  <div id="image-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="" alt="Modal Image">
+      <p id="caption"></p>
+      <button id="prev">Prev</button>
+      <button id="next">Next</button>
+    </div>
+  </div>
+</body>
+</html>

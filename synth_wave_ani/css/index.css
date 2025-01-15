@@ -1,0 +1,311 @@
+@charset "utf-8";
+.space_bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url(../img/starsx2.png) center center/cover;
+    animation: stars 100s infinite linear;
+}
+@keyframes stars {
+    from {
+        transform: rotate(0deg) scale(2);
+    }
+    to {
+        transform: rotate(360deg) scale(2);
+    }
+}
+.aurora_purple {
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    bottom: 17%;
+    background: url(../img/auora.png);
+    mix-blend-mode: screen;
+}
+.aurora_mint {
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    bottom: 19%;
+    background: url(../img/auora_mint.png);
+    mix-blend-mode: screen;
+    display: none;
+}
+.road_bg {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: -10px;
+    background: url(../img/road_bg.gif) center center/cover;
+}
+.road {
+    width: 2401px;
+    height: 274px;
+    left: -12.5%;
+    bottom: -9.6%;
+    position: absolute;
+    background: url(../img/puple_road.png) center center/cover;
+}
+.road_rail {
+    width: 2401px;
+    height: 274px;
+    left: -12.5%;
+    bottom: -60%;
+    position: absolute;
+    background: url(../img/road_rail.png) center center/cover;
+    animation: roadrail 1s infinite;
+}
+@keyframes roadrail {
+    from {
+        bottom: 7%;
+        transform: scale(0);
+    }
+    to {
+        bottom: -180%;
+        transform: scale(10);
+    }
+}
+.car {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 322px;
+    height: 156px;
+    background: url(../img/car.png);
+    cursor: pointer;
+}
+.city_mint {
+    position: absolute;
+    width: 1176px;
+    height: 665px;
+    left: 50%;
+    bottom: 16%;
+    transform: translateX(-50%);
+    background: url(../img/city_mint.png) no-repeat;
+    cursor: pointer;
+    display: none;
+    mix-blend-mode: lighten;
+}
+.city_purple {
+    position: absolute;
+    width: 1176px;
+    height: 665px;
+    left: 55%;
+    bottom: 19%;
+    transform: translateX(-50%);
+    background: url(../img/city_purple.png) no-repeat;
+    cursor: pointer;
+    mix-blend-mode: lighten;
+}
+.symbol1 {
+    width: 140px;
+    height: 163px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: url(../img/sumbol1.png) no-repeat;
+    cursor: pointer;
+}
+.symbol1:hover {
+    animation: bouse 0.6s infinite;
+}
+@keyframes bouse {
+    from {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(1.1);
+    }
+    66% {
+        transform: scale(1.2);
+    }
+    88% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.tree_left {
+    position: absolute;
+    width: 335px;
+    height: 227px;
+    left: 37%;
+    top: 67.5%;
+    background: url(../img/tree.png);
+    animation: treeleft 1s infinite linear;
+    transform: scale(0.1) translate(-50%,-10%);
+}
+@keyframes treeleft {
+    form {
+        transform: scale(0.1) translate(-170%,-10%);
+    }
+    25% {
+        transform: scale(0.25) translate(-130%,0%);
+    }
+    50% {
+        transform: scale(0.5) translate(-180%,10%);
+    }
+    75% {
+        transform: scale(0.75) translate(-240%,30%);
+    }
+    to {
+        transform: scale(1) translate(-380%,70%);
+    }
+}
+.tree_right {
+    position: absolute;
+    width: 335px;
+    height: 227px;
+    left: 48%;
+    top: 67.5%;
+    background: url(../img/tree.png);
+    animation: treeright 1s 0.5s infinite linear ;
+    transform: scale(0.1) translate(50%,-10%)  scaleX(-1);
+}
+@keyframes treeright {
+    form {
+        transform: scale(0.1) translate(170%,-10%) scaleX(-1);
+    }
+    25% {
+        transform: scale(0.25) translate(130%,0%)  scaleX(-1);
+    }
+    50% {
+        transform: scale(0.5) translate(180%,10%)  scaleX(-1);
+    }
+    75% {
+        transform: scale(0.75) translate(240%,30%)  scaleX(-1);
+    }
+    to {
+        transform: scale(1) translate(380%,70%)  scaleX(-1);
+    }
+}
+.purple_moutian {
+    position: absolute;
+    right: 0;
+    bottom: 19%;
+    width: 798px;
+    height: 196px;
+    background: url(../img/mountain.png);
+    cursor: pointer;
+}
+.mint_moutian {
+    position: absolute;
+    right: 0%;
+    bottom: 17.5%;
+    width: 798px;
+    height: 196px;
+    background: url(../img/mint_moutian.png);
+    cursor: pointer;
+    display: none;
+}
+.purple_sun {
+    position: absolute;
+    width: 216px;
+    height: 201px;
+    right: 52px;
+    bottom: 184px;
+    background: url(../img/purple_sun.png);
+}
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    cursor: pointer;
+}
+.modal_inner {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.modal_inner p {
+    text-align: center;
+    font-size: 48px;
+    line-height: 2;
+    color: #fff;
+    animation: slidein 1s;
+    font-family: 'Paperlogy-3';
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+.modal2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    cursor: pointer;
+}
+.modal_inner2 {
+    width: 100%;
+    height: 100%;
+    font-size: 98px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'commando';
+    display: flex;
+    flex-direction: column;
+}
+.modal_inner2 p {
+    background: linear-gradient(0deg, #D8CBEC 0%, #645085 51%, #9585B1 55%, #BFB1D6 60%, #DDD5E9 70%, #F5F3F9 80%, #FFF 86%, #FBF8FF 87%, #EDE2FF 93%, #E9DBFF 96%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 30px rgba(110,90,141,0.8);
+}
+.modal2 .symbol2 {
+    width: 446px;
+    height: 395px;
+    background: url(../img/symbol2.png) center center/cover;
+    cursor: pointer;
+    position: relative;
+}
+.modal2 .symbol2 .symbol2_bg {
+    width: 361px;
+    height: 361px;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    border-radius: 50%;
+    z-index: -1;
+    border: 5px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(#F52C94 0%, #5B1195 50%, #2EB0FC 100%);
+    background-origin: border-box; 
+    background-clip: padding-box, border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    animation: 0.6s pulse forwards infinite ease-in-out;
+}
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+  }
