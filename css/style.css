@@ -46,7 +46,7 @@
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url(../img/cookie.jpg) center center/cover no-repeat;
+    background: url(../img/index_og.jpg) top center/cover no-repeat;
 }
 #home::before {
     width: 50%;
@@ -55,13 +55,264 @@
     font-size: 11vh;
     mix-blend-mode: lighten;
     white-space:pre;
-    background: #FFFDEC;
+    background: #FFF;
     display: flex;
     align-items: center;
     justify-content: right;
     font-family: var(--eng-bold-style);
     overflow: hidden;
     text-align: right;
+}
+/* .greetings */
+.greetings {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: none;
+}
+.gr_txtbox {
+    width: 1200px;
+    height: 560px;
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%,-50%);
+    border: 3px solid var(--web-black-color);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 72px;
+    background: var(--web-white-color);
+    z-index: 1;
+}
+.gr_txtbox h2 {
+    font-size: 72px;
+    font-family: var(--notosans-font);
+    font-weight: 600;
+}
+.gr_txtbox p {
+    font-size: 24px;
+    font-family: var(--notosans-font);
+    font-weight: 300;
+}
+.greetings::before {
+    content: '';
+    width: 1200px;
+    height: 560px;
+    background: #563A9C;
+    position: absolute;
+    border-radius: 40px;
+    left: 52%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.left_eye {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: 42.5%;
+    transform: translateX(-50%);
+    top: 12%;
+}
+.round {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 24px solid #604CC3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wink {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #604CC3;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: wink_ani 2s infinite alternate;
+}
+@keyframes wink_ani {
+    0% {
+        height: 100px;
+    }
+    95% {
+        height: 100px;
+    }
+    100% {
+        height: 0px;
+    }
+}
+.roll {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #604CC3;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: roll_ani 6s infinite;
+}
+@keyframes roll_ani {
+    0% {
+        top: 90%;
+        left: 50%;
+    }
+    25% {
+        left: 60%;
+        top: 75%;
+    }
+    50% {
+        left: 35%;
+        top: 70%;
+    }
+    75% {
+        left: 40%;
+        top: 90%;
+    }
+    100% {
+        top: 90%;
+        left: 50%;
+    }
+}
+.right_eye {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 57.5%;
+    transform: translateX(-50%);
+    top: 12%;
+}
+.punk_logo {
+    position: absolute;
+    transform: rotate(-30deg);
+    z-index: 1;
+    left: 9%;
+    top: 60%;
+    transition: 0.4s;
+}
+.punk_logo:hover {
+    left: 7%;
+    transform: rotate(-60deg);
+}
+.greetings_flower {
+    position: absolute;
+    right: 12%;
+    top: 15%;
+    animation: flower_rotate 10s infinite linear;
+    z-index: 2;
+}
+/* profile */
+#profile {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_tit {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 170px;
+    box-sizing: border-box;
+    gap: 40px;
+}
+.profile_name {
+    font-size: 24px;
+}
+.profile_name span {
+    font-size: 28.5px;
+    font-weight: bold;
+}
+.profile_txt {
+    font-size: 18px;
+}
+.profile_img {
+    width: 40%;
+    height: 80%;
+}
+.profile_img .index_profile {
+    width: 80%;
+    height: 100%;
+    background: url(../img/index_page01_proflie.jpg) center center/cover;
+}
+/* about */
+#about {
+    width: 100%;
+    height: 100vh;
+    padding-top: 72px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: #212121;
+    color: #f1f1f1;
+}
+.about_profile {
+    width: 80%;
+    background: #0f0f0f;
+    display: flex;
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.about_img {
+    width: 25%;
+    height: 100%;
+    background: url(../img/about_photo.png) center center/cover no-repeat;
+    position: relative;
+}
+.about_me {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    gap: 24px;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    background: rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+}
+.about_title {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.about_title .me_name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffbf00;
+}
+.about_title ol {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.about_box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.about_box li h6 {
+    padding-bottom: 8px;
+    font-size: 24px;
+    color: #ffbf00;
+}
+.trans_br {
+    display: none;
 }
 /* Project */
 #project {
@@ -215,7 +466,7 @@
 /* contact */
 #contact {
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     padding-top: 72px;
     box-sizing: border-box;
     display: flex;
@@ -224,6 +475,8 @@
     justify-content: center;
     position: relative;
     gap: 24px;
+    background: #563A9C;
+    color: #ffbf00;
 }
 #contact img {
     position: absolute;
@@ -236,12 +489,9 @@
 }
 #contact p {
     font-size: 42px;
+    font-family: var(--eng-bold-style);
 }
 #contact a {
     font-size: 42px;
-}
-footer {
-    width: 100%;
-    height: 20vh;
-    background: #604CC3;
+    color: #fff;
 }

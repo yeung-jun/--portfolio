@@ -51,6 +51,9 @@
     #project article a span img {
         width: 24px;
     }
+    #project article.view {
+        margin-bottom: 0;
+    }
     #project article.view a {
         margin-left: 0;
         z-index: 1;
@@ -81,6 +84,45 @@
     }
 }
 @media screen and (max-width: 800px) {
+    #profile {
+        flex-direction: column;
+        padding-bottom: 72px;
+        box-sizing: border-box;
+        height: 120vh;
+    }
+    .profile_tit {
+        width: 90%;
+        height: auto;
+        padding-bottom: 20px;
+        padding-top: 72px;
+    }
+    .profile_img {
+        width: 90%;
+        height: 100%;
+    }
+    .profile_img .index_profile {
+        width: 100%;
+    }
+    #about {
+        height: auto;
+        padding-bottom: 72px;
+    }
+    .about_profile {
+        flex-direction: column;
+        gap: 40px;
+        height: 100%;
+        width: 100%;
+    }
+    .about_img {
+        width: 100%;
+        height: 70vh;
+    }
+    .about_title {
+        width: 100%;
+    }
+    .trans_br {
+        display: block;
+    }
     #redesign .redesign_img {
         width: 100%;
         height: 100vh;
@@ -99,7 +141,8 @@
         font-size: 42px;
     }
     #contact p {
-        font-size: 20px;
+        font-size: 28px;
+        text-align: center;
     }
     #contact a {
         font-size: 24px;
@@ -115,5 +158,8 @@
 @media screen and (max-width: 390px) {
     #redesign .redesign_txt .reTxtWrap::before {
         display: none;
+    }
+    #home::before {
+        font-size: 8vh;
     }
 }
