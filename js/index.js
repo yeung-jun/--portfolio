@@ -17,13 +17,13 @@ $(function(){
     const screenWidth = $(window).width();
     if(screenWidth >= 1201) {
       $('#project article.sum41').click(function(){
-        window.location.href= "../sum41/index.html";
+        window.location.href= "sum41/index.html";
       });
       $('#project article.han').click(function(){
-        window.location.href= "../hanchangboo/index.html";
+        window.location.href= "hanchangboo/index.html";
       });
       $('#project article.synth').click(function(){
-        window.location.href= "../synth_wave_ani/index.html";
+        window.location.href= "synth_wave_ani/index.html";
       });
     }
 });
