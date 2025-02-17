@@ -23,7 +23,7 @@ body {
     height: 100%;
     perspective: 1300px;
 }
-.wrap>video {
+.wrap>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
